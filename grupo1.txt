@@ -1,10 +1,5 @@
 Nuevo conflicto
-<<<<<<< HEAD
 Cambio realizado por Moises
-=======
 cambio Ernesto
-<<<<<<< HEAD
->>>>>>> d0f3f9756098954eb56dbcc7cdf2452cd6c07b1c
-=======
 klk (emilio)
->>>>>>> 82580715b4a361ecfdd6cb463ecdfa2f3add66ba
+Cambio Moisés linea5

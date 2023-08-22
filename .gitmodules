@@ -1,3 +1,6 @@
 [submodule "cursoGit"]
 	path = cursoGit
 	url = https://github.com/Ricardo11928/cursoGit.git
+[submodule "curso-git"]
+	path = curso-git
+	url = https://github.com/Trolsillo/curso-git.git

@@ -1,2 +1,6 @@
 Nuevo conflicto
+<<<<<<< HEAD
 Cambio realizado por Moises
+=======
+cambio Ernesto
+>>>>>>> d0f3f9756098954eb56dbcc7cdf2452cd6c07b1c

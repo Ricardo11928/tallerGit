@@ -1,3 +1,0 @@
-Nombre: Samuel
-Apellido: Pereira
-Edad: 32 años

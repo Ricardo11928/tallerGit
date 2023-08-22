@@ -1,3 +1,8 @@
+
 [submodule "Grupo4"]
 	path = Grupo4
 	url = https://github.com/albertovillar04/Grupo4.git
+[submodule "cursoGit"]
+	path = cursoGit
+	url = https://github.com/Ricardo11928/cursoGit.git
+

@@ -1,0 +1,97 @@
+https://docs.google.com/spreadsheets/d/1grU6MFquwuDCNmEARO5CBniEBpgfukgU19JMlPcd1g0/edit?usp=sharing
+
+
+Soluciona el siguiente cuestionario.
+
+(Valor por pregunta : 5pts)
+**Opción Múltiple:**
+
+1. ¿Qué comando se utiliza para clonar un repositorio remoto?
+   b) git clone
+  
+
+2. ¿Cuál es el propósito del comando `git pull`?
+   a) Subir cambios al repositorio remoto.
+
+3. ¿Cuál es el comando para crear una nueva rama en Git?
+   a) git branch
+
+4. ¿Qué hace el comando `git status`?
+   b) Muestra el estado de los archivos en el repositorio.
+
+5. ¿Cómo se deshacen los cambios no confirmados en Git?
+   a) git revert
+
+**Verdadero/Falso:**
+
+6. En Git, cada confirmación se identifica por un hash único.
+   - Verdadero
+
+7. Git es un sistema de control de versiones centralizado.
+   -  Verdadero
+
+8. El comando `git merge` se utiliza para crear una nueva rama.
+   -  Falso
+
+9. El comando `git stash` se utiliza para descartar permanentemente los cambios locales.
+   -  Falso
+
+10. Git es únicamente útil para programadores y no tiene aplicaciones en otros campos.
+    -  Falso
+
+**Preguntas Abiertas:**
+
+11. Describe el proceso de resolución de conflictos en Git cuando se fusionan dos ramas.
+	Dentro de git, al subir los cambios, se le dara click en resolve conflicts, en el cual, 
+apareceran ambos cambios y nos permitira seleccionar uno o ambos cambios para que aparezcan en el archivo final
+
+12. ¿Por qué es importante crear confirmaciones (`commits`) atómicas y descriptivas en Git?
+	Para saber que esta siendo afectado o que cambios se estan realizando, esto permite al arquitecto
+llevar un mejor control de los cambios realizados, asi como a la reduccion de tiempo en la correccion de 
+psoibles errores
+
+13. Explica el concepto de ramificación (`branching`) en Git y cómo puede ser beneficioso en el desarrollo de software.
+	Branching o  ramificacion es  crear una extension de un proyecto  a partir de una ruta o rama principal, lo cual puede permitir,trabajar 
+diferentes funcionalidades sin afectar produccion, es decir, no se tiene que detener la aplicacion para realizar  cambios sobre ellas esta es en mi experiencia
+la mayor ventaja que puedo utilizar como programador. Otra es que las ramificaciones abren las puertas a poder crear flags y a evitar  daños irreparables
+la aplicacion
+
+14. ¿Qué es un repositorio remoto en Git y cómo se conecta a un repositorio local?
+   Un repositorio remoto git, es un proyecto privado o publico  alojado en una maquina virtual o la nube, el cual puede ser accesado por un grupo de personas,
+ y el mismo es conectado por la consola utilizando los diferentes medios de  conexion ssh o https.
+
+15. Menciona algunos posibles casos de uso para el archivo `.gitignore`.
+	Algunos casos de uso para gitignore serian
+	-  Archivos de configuracion del equipo en el que se esta trabajando
+	-  Informacion de acceso o equipo que no quiere que se suban 
+	- Archivos de  personalizacion de area de trabajo ( ciertas personas configuran a su gusto sus herramientas de trabajo)
+	- Archivos de idioma que no son necesarios para el proyecto 
+
+16. ¿Qué es un conflicto de fusión (`merge conflict`) y cómo se resuelve?
+   -  Es cuando  un archivo es modificado en la misma linea por dos o mas personas, el mismo se resuelve indicando que cambio es el que la herramienta debe tomar 
+dependiendo de como lo defina el arquitecto
+
+17. ¿Cómo se crea una etiqueta (`tag`) en Git y en qué escenarios se suele utilizar?
+git tag -a Nombre_Tag -m "Mensaje identificado de para que se usa el tag" ##########NUMdeCOMMIT
+Se suele utilizar para indicar la version mas estable del proyecto y  a su vez para indicarle al programador cuando se realizan correcciones dentro del mismo
+
+18. Describe el flujo de trabajo básico en Git, desde la creación de un repositorio hasta la colaboración en equipo.
+Primero se crea un repositorio, en el se procede a asignar las personas que tendran acceso al mismo, luego se definen los roles y accesos que tendra cada persona,
+posterior a esto se define el Flujo de trabajo o gitFlow, para posterior establecer las fechas de entrega para  cada parte del proyecto.
+
+19. ¿Cuál es el propósito del comando `git rebase` y cuáles son sus implicaciones?
+El proposito de este comando es dejar el proyecto como estaba antes de cualquier commit y lo que implica es que todos los commits  realizados  se perderan para siempre
+sin poder recuperarlo
+
+20. Explica qué es el flujo de trabajo Gitflow y cómo se estructuran las ramas en este enfoque.
+El flujo de trabajo Gitflow es para establecer como  los colaboradores  trabajaran dentro de un proyecto, es decir que acciones se podran hacer por quien 
+y en que rama.
+La misma se estructura una rama principal o main, la en la cual generalmente cualquier cambio a realizar debera pasar por una aprobacion 
+se tendra una rama de desarrollo en la cual se podra probar cualquier cambio que haga el desarrollador.
+se puede  tener una rama de hotfix para cambios de errores criticos 
+una rama para bugfixs que la misma es para cambios de errores no tan criticos
+Una rama de release la cual consiste en correcciones menores antes de su salida a produccion
+una rama de feature la cual puede ser extremadamente util para trabajo colaborativo en proyectos muy grandes 
+y una  rama de trabajo en la cual el colaborador puede trabajar de manera local 
+Su enfoque es dividir el trabajo en pequeñas partes para poder resolver un gran problema y el garantizar los cambios que salgan a produccion, manteniento siempre
+estable  el ambiente productivo o main

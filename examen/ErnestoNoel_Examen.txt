@@ -1,0 +1,92 @@
+1. ¿Qué comando se utiliza para clonar un repositorio remoto?
+b) git clone
+
+2. ¿Cuál es el propósito del comando `git pull`?
+ c) Descargar y fusionar cambios desde un repositorio remoto.
+ 
+3. ¿Cuál es el comando para crear una nueva rama en Git?
+   a) git branch
+   
+4. ¿Qué hace el comando `git status`?
+b) Muestra el estado de los archivos en el repositorio.
+
+5. ¿Cómo se deshacen los cambios no confirmados en Git?
+   b) git reset
+   
+####################
+6. En Git, cada confirmación se identifica por un hash único.
+   - Verdadero
+
+7. Git es un sistema de control de versiones centralizado.
+   - Falso
+
+8. El comando `git merge` se utiliza para crear una nueva rama.
+   - Falso
+
+9. El comando `git stash` se utiliza para descartar permanentemente los cambios locales.
+   - Falso
+
+10. Git es únicamente útil para programadores y no tiene aplicaciones en otros campos.
+    - Falso
+
+
+################
+
+**Preguntas Abiertas:**
+
+11. Describe el proceso de resolución de conflictos en Git cuando se fusionan dos ramas.
+Desde la interfaz web, seleccionamos la opción de resolver conflictos, la cuál nos abrirá
+el archivo dónde señalará los conflictos de la rama origen vs la rama destino y ajustar los cambios respecto a la 
+señalización del conflicto 
+
+
+12. ¿Por qué es importante crear confirmaciones (`commits`) atómicas y descriptivas en Git?
+Porque esto permite que brindar una idea de el cambio que se está añadiendo a la rama y en caso de requerir hacer correcciones, 
+encontrar errores o reutilizar código, se agiliza la búsqueda de los mismos.
+
+13. Explica el concepto de ramificación (`branching`) en Git y cómo puede ser beneficioso en el desarrollo de software.
+Branching consiste en tener una rama "padre" o principal con el código funcional o de versión final; y para desarrollar un software es beneficioso
+porque permite realizar mejoras, features o correciones sin comprometer el código funcional inicial y permite la participación de múltiples colaboradores 
+en el mismo.
+
+14. ¿Qué es un repositorio remoto en Git y cómo se conecta a un repositorio local?
+Un repositorio remoto es un espacio dentro de una página web donde se encuentra el código (u otros archivos) almacenados y que soporta el manejo
+de versiones con git.
+Para conectar un repositorio remoto con uno local se utiliza el comando git remote add "url repo"
+
+15. Menciona algunos posibles casos de uso para el archivo `.gitignore`.
+
+a. Evitar la edicion del README.txt porque contine información del código
+b. No versionar archivo de pruebas unitarias.
+c. No cambiar contenido de archivos staticos
+
+16. ¿Qué es un conflicto de fusión (`merge conflict`) y cómo se resuelve?
+Merge conflict es un caso en el cual dos personas han realizado cambios en el mismo archivo partiendo desde el mismo punto del tiempo en una rama
+Esto se resuelve con la adición de los cambios de la persona que ralizó merge primero, en los cambios de quien esta obteniendo el mensaje de 
+conflicto
+
+17. ¿Cómo se crea una etiqueta (`tag`) en Git y en qué escenarios se suele utilizar?
+la etiqueta tag se crea después de realizar el merge de rama una rama de release a main y luego, dentro de la interfaz web del repositorio remoto
+ir a la opción de New release y se crea el release con la versión o nombre que se desee colocar.
+Se utiliza cuando se quiere señalizar una versión estable de un desarrollo y al mismo tiempo tener una versión "beta" funcional pero que 
+aun está en proceso de prueba o estabilización.
+
+18. Describe el flujo de trabajo básico en Git, desde la creación de un repositorio hasta la colaboración en equipo.
+a.Se crea un repositorio desde la interfaz web de preferencia (GiHub)
+b.Se configuran los accesos a los colaboradores y los permisos que tendran los mismos
+c.Se crean las ramas adicionales a requeridas (devlopment, release, hotfix, etc)
+d.Los colaboradores clonan el repositorio
+e.Cada colaborador realiza sus contribuciones en sus respectivas ramas feature, creadas a partir de main y realizan los add, commits y push de ramas
+locales al repositorio remoto
+f.Se realizan los merge a la rama development
+g.Se valida la funcionalidad del desarrollo
+h.Hacer merge a main con un release
+
+19. ¿Cuál es el propósito del comando `git rebase` y cuáles son sus implicaciones?
+el git rebase cambia el head actual de la rama por el que se le indique, lo cuál impacta en la cronología del historial de commits
+
+20. Explica qué es el flujo de trabajo Gitflow y cómo se estructuran las ramas en este enfoque.
+El flujo de trabajo gitflow es una standarización de arquitectura propuesta para llevar un versionamiento de trabajo de mnera más ordenada y eficiente
+El gitflow propone tener ramas development para el desarrollo del proyecto, ramas feature para crear pequeñas adiciones no críticas;
+ramas hotfix para correcciones directas contra main para correciones críticas; y rama bugfix para correcciones que no están impactando el funcionamiento del 
+código de main

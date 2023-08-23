@@ -1,0 +1,91 @@
+Soluciona el siguiente cuestionario.
+
+(Valor por pregunta : 5pts)
+**Opción Múltiple:**
+
+1. ¿Qué comando se utiliza para clonar un repositorio remoto?
+
+   b) git clone 
+
+
+2. ¿Cuál es el propósito del comando `git pull`?
+
+   c) Descargar y fusionar cambios desde un repositorio remoto.
+
+
+3. ¿Cuál es el comando para crear una nueva rama en Git?
+
+   b) git checkout
+
+
+4. ¿Qué hace el comando `git status`?
+
+   b) Muestra el estado de los archivos en el repositorio.
+
+
+5. ¿Cómo se deshacen los cambios no confirmados en Git?
+   a) git revert
+
+
+**Verdadero/Falso:**
+
+6. En Git, cada confirmación se identifica por un hash único.
+   - Verdadero 
+   
+7. Git es un sistema de control de versiones centralizado.
+   - Verdadero 
+
+8. El comando `git merge` se utiliza para crear una nueva rama.
+   - Falso
+
+9. El comando `git stash` se utiliza para descartar permanentemente los cambios locales.
+   - Falso
+
+10. Git es únicamente útil para programadores y no tiene aplicaciones en otros campos.
+    - Verdadero
+
+**Preguntas Abiertas:**
+
+11. Describe el proceso de resolución de conflictos en Git cuando se fusionan dos ramas.
+Una vez se fusionan las ramas en VS apararce las opciones de aceptar los cambios que ya estaban o solo aceptar los cambios en siguiens o aceptar ambos,
+en cualquiera de los escenario el desarrollador debera elegir el que sea apropiado para su tema y volver ha agregar los cambios puede utiliar el mismo commit y 
+hacer push finalmente a la rama designada para el desarrollo antes de pasar a la main o master
+
+12. ¿Por qué es importante crear confirmaciones (`commits`) atómicas y descriptivas en Git?
+Es importante para saber bien o identificar de una forma oportuna las posibles causas de un problema o 
+saber bien que es lo que se está modificando o añadiendo
+
+13. Explica el concepto de ramificación (`branching`) en Git y cómo puede ser beneficioso en el desarrollo de software.
+Son ramas que nos sirve para trabajar sobre un proyecto a la para de otros desarrolladores para no afectar directamente 
+el proyecto o la aplicacion principal y tener control de versiones en mis proyectos y mantener integra mi versión estbale del codigo.
+
+14. ¿Qué es un repositorio remoto en Git y cómo se conecta a un repositorio local?
+un repositorio remoto es lo que mantenemos de nuestro proyecto en la nuve ya se así sea cualquier tecnología como 
+(BitBucket, GitLab, Github) y se puede conectar vía https, ssh, GitHub CLI
+
+15. Menciona algunos posibles casos de uso para el archivo `.gitignore`.
+se puede utilizar para ignorar cualquier tiepo de archivo que se no se quiera que se modifique por x o y motivo
+tales como DS_store, node_module ect...
+
+16. ¿Qué es un conflicto de fusión (`merge conflict`) y cómo se resuelve?
+Son proeblemas al trabajar en distintas ramas sobre un mismo archivo o modulo por diferentes desarrroladores y al 
+hacerle meger o push a la rama abiertas para todos los desarrolladores las mismas lineas pueden haber sido afectadas 
+por diferentes ramas.
+
+17. ¿Cómo se crea una etiqueta (`tag`) en Git y en qué escenarios se suele utilizar?
+Luego de ya haber creado todo los componentes principales para un aplicacion, y se esté listo para la salida del programa
+se le asigna un tag de versionamiento para llevar un control de las modificaciones que impacte las misma, un ejemplo puediera ser 
+cuando ya va salir la primera version v1.0.0, en el caso de un feature o bugfixt v1.0.1  
+
+18. Describe el flujo de trabajo básico en Git, desde la creación de un repositorio hasta la colaboración en equipo.
+Se crea un proyecto nuevo, se crean los componentes principales(gitignore por ejemplo), las ramas principales (master, development, submodulos) y sus privilegios, 
+se documenta el Gitflow del proyecto, se crean los commits necesarios, se da acceso al equipo de trabajo.
+
+19. ¿Cuál es el propósito del comando `git rebase` y cuáles son sus implicaciones?
+Es un comando git utilizado para la reorganización para alterar el fundamento de la rama de 
+una merge a otra haciendo que parezca que has creado la rama desde un merge diferente
+
+20. Explica qué es el flujo de trabajo Gitflow y cómo se estructuran las ramas en este enfoque.
+Se puede estructurar partiendo de una rama main que contenga los cambios princpales, luego tambien tendremos una rama hotfixt en caso de cambios de urgencia por errores, 
+tambien una rama de desarrollo (develop) que contenga los cambios principales que provengan de la main, de ahí nacerian las ramas feature y los bugfixt para hacer merge a develop una vez terminadas
+y si todo sale bien se pasen a la main.

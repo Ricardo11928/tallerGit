@@ -1,0 +1,66 @@
+1. ¿Qué comando se utiliza para clonar un repositorio remoto?
+R = b) git clone
+
+2. ¿Cuál es el propósito del comando `git pull`?
+R = c) Descargar y fusionar cambios desde un repositorio remoto.
+
+3. ¿Cuál es el comando para crear una nueva rama en Git?
+R= a) git branch
+
+4. ¿Qué hace el comando `git status`?
+R= b) Muestra el estado de los archivos en el repositorio.
+
+5. ¿Cómo se deshacen los cambios no confirmados en Git?
+R=  a) git revert
+
+6. En Git, cada confirmación se identifica por un hash único.
+   - Verdadero
+
+7. Git es un sistema de control de versiones centralizado.
+   - Verdadero
+
+8. El comando `git merge` se utiliza para crear una nueva rama.
+   - Falso
+
+9. El comando `git stash` se utiliza para descartar permanentemente los cambios locales.
+   - Falso
+
+10. Git es únicamente útil para programadores y no tiene aplicaciones en otros campos.
+    - Falso
+
+11. Describe el proceso de resolución de conflictos en Git cuando se fusionan dos ramas.
+R= La forma más directa de resolver un conflicto de fusión de dos ramas es editar el archivo conflictivo. Abrir el archivo que esté en conflicto en un IDE. Por ejemplo, simplemente vamos a eliminar todas las líneas que tienen conflictos.
+
+
+12. ¿Por qué es importante crear confirmaciones (`commits`) atómicas y descriptivas en Git?
+R= Es fundamental crear confirmaciones atómicas para que resulte fácil localizar los errores y revertir los cambios minimizando el impacto en el resto del proyecto.
+
+13. Explica el concepto de ramificación (`branching`) en Git y cómo puede ser beneficioso en el desarrollo de software.
+R= Basicamente es una bifurcación en una línea de tiempo de un proyecto que puede crear una copia paralela para aplicar cambios que no afecten la version master de la rama. Eso nos puede beneficiar ya que es posible crear diferentes copias que sean necesarias.
+
+14. ¿Qué es un repositorio remoto en Git y cómo se conecta a un repositorio local?
+R= Los repositorios remotos son versiones de un proyecto que se alojan en cualquier red. Para conectarlo a un repo local sería a través del comando git remote add "nombre url"
+
+15. Menciona algunos posibles casos de uso para el archivo `.gitignore`.
+R= Ignorar un archivo o carpetas  del cual no queremos que sea ignorado por Git.
+ "/" se usa para ignorar nombres de ruta relaciones con el archivo .gitignore
+
+16. ¿Qué es un conflicto de fusión (`merge conflict`) y cómo se resuelve?
+R= Es cuando Git no puede resolver automaticamente un conflicto. En este caso en los PR a nivel de Github se puede hacer mediante una solicitud de extracción con un conflicto de fusión que se quiere resolver.
+
+17. ¿Cómo se crea una etiqueta (`tag`) en Git y en qué escenarios se suele utilizar?
+R= Por ejemplo en GitHub te permite crear etiquetas desde la opción tags en el repo. Las etiquetas se asocian con confirmaciones, así que se puede utilizar para marcar un punto en el historial del repo incluyendo los números de versión para un lanzamiento.
+Debes enviar las etiquetas de forma explícita al servidor luego de que las hayas creado. Se puedes ejecutar git push origin tag. Si se quiere enviar varios tags a la vez, se puedes usar la --tags del comando git push.
+
+18. Describe el flujo de trabajo básico en Git, desde la creación de un repositorio hasta la colaboración en equipo.
+R= Puede ser para desarrollos personales o para desarrollos en los que se puede aprobar la versión del software de forma local y luego subirla a la rama remota Máster. En este flujo, normalmente una sola persona hace cambios sobre el código y realiza pruebas localmente. Luego adiciona los cambios al Staging Area, hace commit, y luego push para agregar los cambios al repositorio remoto.
+
+19. ¿Cuál es el propósito del comando `git rebase` y cuáles son sus implicaciones?
+R= Rebasar es cambiar la base de la rama de un commit a otro, haciendo ver como si se hubiera creado la rama a partir de un commit diferente.
+Tiene dos implicaciones: Al re aplicar los commits, git crea otros commits nuevos. Esos nuevos commits, son tratados completamente diferentes e independientes por git.
+ 
+
+20. Explica qué es el flujo de trabajo Gitflow y cómo se estructuran las ramas en este enfoque.
+R= Un flujo de trabajo de Git es una fórmula o una recomendación sobre cómo usar Git para llevar a cabo el trabajo de forma productiva. Tiene ramas como development y master, con ramas de características y versiones. Esto estructura el flujo de trabajo desde el desarrollo hasta que se entrega finalmente.
+
+

@@ -1,0 +1,54 @@
+1	b
+2	c
+3	b
+4	b
+5	a
+6	VERDADERO
+7	VERDADERO
+8	FALSO
+9	FALSO
+10	FALSO
+
+
+
+11. Describe el proceso de resolución de conflictos en Git cuando se fusionan dos ramas.
+R. Una vez se fusionen dos ramas y en caso de que se presenten conflictos en una fusión es necesario resolver los conflictos, ya que git no permitira realizar un commit puesto que existe
+una indiferencia que debe ser resuelta, ya que se pierte la atomicidad e integridad de cambios.
+
+12. ¿Por qué es importante crear confirmaciones (`commits`) atómicas y descriptivas en Git?
+R. Para establecer como completado todos los cambios que se han realizado en el código en una rama y cuando se requiera poder fusionar a otras ramas 
+identificando el alcance de todos los cambios con la descripción del commit.
+
+
+13. Explica el concepto de ramificación (`branching`) en Git y cómo puede ser beneficioso en el desarrollo de software.
+R. La ramificación permite seccionar un proyecto para un manejo adecuado y facil cuando se trata de modificaciones en el código, dependiendo del alcance que se requiera.
+
+14. ¿Qué es un repositorio remoto en Git y cómo se conecta a un repositorio local?
+R. Es el almacenamiento de todo el proyecto en un lugar externo a nuestro repositorio local, lo cual va a permitir tener como alamcenamiento nuestro código, recibir nuestras modificaciones
+ y así interactuar entre uno o mas personas de manera facil sin dependencia de nuestro repositorio local.
+
+15. Menciona algunos posibles casos de uso para el archivo `.gitignore`.
+R. Variables de entornos, archivos de configuración de credenciales, dependencias del proyecto, configuraciones externas del editor de código.
+
+16. ¿Qué es un conflicto de fusión (`merge conflict`) y cómo se resuelve?
+R. Cuando una rama ya posee cambios latentes en una o mas secciones del código y otra rama sobreescribe sobre la misma sección o lineas de código se crea una merge conflict
+puesto que git no sabe cual es la rama que debe llevar los cambios con prioridad entonces para resolver es necesario ajustar los cambios en
+la rama que estan siendo fusionada, por ejemplo aceptando ambos cambios, aceptando solo cambios entrantes o aceptando solo cambios de la rama.
+
+17. ¿Cómo se crea una etiqueta (`tag`) en Git y en qué escenarios se suele utilizar?
+R. A partir de un release, y se suele utilizar cuando es necesario el versionado del proyecto.
+
+18. Describe el flujo de trabajo básico en Git, desde la creación de un repositorio hasta la colaboración en equipo.
+R. Como obligatorio debemos tener un repositorio remoto que es el encargado de almacenar todo nuestro código, es necesario una rama principal que es la que contendra 
+el proyecto en producción, luego es recomendable crear una rama development para el manejo de todos los desarrollos y asi sucesivamente crear ramas según el alcance de los escenarios,
+por ejemplo bugfix para arreglar "bugs" de ramas de desarrollo o feature para nuevas funcionalidades. Cada mienbro del equipo parte de una rama según sea el caso, trabaja sobre ella
+y luego pide Pull Request para la integración de los cambios a una nueva rama y así llevar un flujo escalonado para cada modificación.
+
+19. ¿Cuál es el propósito del comando `git rebase` y cuáles son sus implicaciones?
+R. Este comando permite rebasar un commit sobre un commit de una rama pero implica que no va tener los cambios que posee este commit "ignorado", en caso tal de que sea un cambio que contenga código necesario
+tendra consecuencias el nuevo commit ya que no presentara los cambios necesarios del commit rebasado.
+
+20. Explica qué es el flujo de trabajo Gitflow y cómo se estructuran las ramas en este enfoque.
+R. Se podria decir que es una manera estandar de llevar el trabajo de un proyecto. Todos los proyectos presentan un ciclo, pues inician con desarrollos como funcionalidades o mejoras luego
+pasan a pruebas, luego versionados como release y por ultimo a producción. Entre las ramas mas conocidas y usadas son Main para manetener el código de producción, release para el versionado, 
+development para desarrollos, features para funcionalidades, bugfix para arreglos de menor urgencia, hotfix para arreglos de urgencia

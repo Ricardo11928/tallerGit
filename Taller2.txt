@@ -1,0 +1,14 @@
+Taller 2
+
+Como taller vamos a realizar en los grupos de trabajo ya definidos las siguientes instrucciones.
+
+-Inicialmente, seleccionar el flujo de trabajo a realizar.
+-Crear un repositorio por el grupo de trabajo
+-En este repositorio por persona hacer 3 ramas como mínimo con sus respectivos cambios.
+-En la main deben haber como mínimo 6 merge con las ramas de los desarrolladores.
+-Haber 2 tags de versionamiento como mínimo.
+-Haber un archivo que tenga información del usuario pero que sea ignorado por git.
+-Agregar un submodulo dado por el instructor.
+-Como ultimo commit sea la version con el merge de todas las ramas
+
+Luego de finalizado el tiempo, el equipo debería salir a explicar su flujo de trabajo y que se hizo.

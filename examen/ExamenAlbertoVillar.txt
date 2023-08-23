@@ -1,0 +1,67 @@
+Alberto Villar
+
+I- Parte
+
+Soluciona el siguiente cuestionario.
+
+(Valor por pregunta : 5pts)
+**Opción Múltiple:**
+
+1.a
+2.c
+3.b
+4.b
+5.a
+
+
+II- Parte
+**Verdadero/Falso:**
+
+6.Verdadero
+7.Verdadero
+8.Falso
+9.Falso
+10.Falso
+
+
+III- Parte
+
+11. Describe el proceso de resolución de conflictos en Git cuando se fusionan dos ramas.
+R= Cuando ocurre un conflicto con dos ramas revisamos que se tomen los cambios que vienen entrando.
+
+12. ¿Por qué es importante crear confirmaciones (`commits`) atómicas y descriptivas en Git?
+R= Es super importante ya que al trabajar con diferentes personas hay que dejar de manera clara lo que se esta trabajando, que cambios se realizaron para así la otra persona pueda comprender rapidamente de lo contrario le costaria mucho trabajo ir de commit en commit para entender.
+
+13. Explica el concepto de ramificación (`branching`) en Git y cómo puede ser beneficioso en el desarrollo de software.
+R= Es importante ponerlo en practica ya queasi podriamos tener un mejor control del proyecto que se esta trabajando y en caso de tener algun error o falla saber hasta que punto el proyecto estaba funcional y regresarlo a este.
+
+14. ¿Qué es un repositorio remoto en Git y cómo se conecta a un repositorio local?
+R= Un repositorio remoto en Git es una serie de archivos que para poder descargarlos desde nuestra local primero se debe crear una llave(relacion de confianza) con nuestra local y de esta forma ya podriamos descargar y hacer modificaciones en el repositorio.
+
+15. Menciona algunos posibles casos de uso para el archivo `.gitignore`.
+R= Podría ser alguna configuracion, algun apunte o ciertos archivos a la que no queremos que se le hagan modificaciones en el repositorio remoto.
+
+16. ¿Qué es un conflicto de fusión (`merge conflict`) y cómo se resuelve?
+R= Un conflicto es cuando dos o mas personas se encuentra modificando un mismo archivo, para resolverlo hay que tomar los cambios as recientes.
+
+17. ¿Cómo se crea una etiqueta (`tag`) en Git y en qué escenarios se suele utilizar?
+R= Una etiqueta se crea desde el comando git tag -a V1.0.0 -m "comentario" #commit y se utiliza para tener las versiones de diferentes releases y asi tener un mejor control del proyecto.
+
+18. Describe el flujo de trabajo básico en Git, desde la creación de un repositorio hasta la colaboración en equipo.
+R= En este caso desde git creamos un repositorio desde el sitio web, luego desde la configuracion del repositorio indicamos quienes puedes ser los colaboradores, luego de este ya los colaboradores podrían clonar el repo y seguir con el flujo de trabajo acordado ya sea crear una nueva rama o trabajar desde ya una creada.
+
+20. Explica qué es el flujo de trabajo Gitflow y cómo se estructuran las ramas en este enfoque.
+R= Bueno la estructuracion depende de cada estilo de trabajo, en este caso utilizaremos
+Main
+HotFix
+Release
+Development
+Feature
+Workbranch
+
+Empezariamos en este caso trabajando la rama de Workbranch, ya cuando se tiene lo que se requiere en este rama,
+Todos los cambios que tengan que ver con la misma funcionar a crear o modificar se llevan hasta el branch de Feature,
+Luego de esto se prueba de manera local y si todo esta ok, le hacemos merge a development y se abre un PR para llevarlo a Release,
+En este punto para por una serie de prueba del QA y de todo estar bien se abre un PR hacía main para luego hacerle merge.
+En caso de lo que ya este en main presente un problema si es critico se lleva de main a la rama hotfix y luego de solucionarlo se hace merge hacía development y PR hacía main.
+En caso de que el problema no sea critico seguiría el curso inicial que sería desde Workbranch.
